@@ -238,23 +238,36 @@ Whether you need cleaning for your home, office, or commercial property, our tea
 <h2>Book a Service</h2>
 
 
-  <form action="https://formspree.io/f/xqeyyzyn" method="post">
+<form action="https://formspree.io/f/xqeyyzyn" method="post">
 
 
- <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+ 
+
+<label>Full Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" placeholder="+44" required>
+
+<label>Service</label>
+<select name="service">
+<option>Roof Cleaning</option>
+<option>Gutter Cleaning</option>
+<option>Floor Cleaning</option>
+</select>
+
+<label>Message</label>
+<textarea name="message"></textarea>
+
+<button type="submit">Book Now</button>
+
+</form>
 
 
-
-  </form>
+  
 
 
 </section>
