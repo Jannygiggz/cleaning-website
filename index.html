@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CleanPro Cleaning Services</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* Transparent Navbar */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+display:flex;
+justify-content:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+padding:15px 20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+background:#1e3a5f;
+}
+
+/* Hero Section */
+
+.hero{
+background:url("roof.jpg") center/cover;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+font-size:35px;
+font-weight:bold;
+text-shadow:2px 2px 5px black;
+}
+
+/* Sections */
+
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+/* Cards */
+
+.card{
+background:white;
+width:300px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+transition:transform 0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* Booking Form */
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input, textarea, select{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#1e3a5f;
+color:white;
+padding:12px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#0d2233;
+transform:scale(1.05);
+}
+
+/* WhatsApp Button */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+/* Map */
+
+iframe{
+width:100%;
+height:300px;
+border:0;
+margin-top:20px;
+}
+
+/* Footer */
+
+footer{
+background:#1e3a5f;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero{
+font-size:24px;
+padding:20px;
+}
+
+.services{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#booking">Book</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+Professional Roof, Gutter, Concrete & floor Cleaning
+</div>
+
+<section id="services">
+
+<h2>Our Services</h2>
+<br>
+
+<div class="services">
+
+<div class="card">
+<img src="roof.jpg">
+<h3>Roof Cleaning</h3>
+<p>We remove moss and dirt to protect and improve your roof.</p>
+</div>
+
+
+<div class="card">
+<img src="roof1.jpg">
+<br>
+</br>
+<img src="roof2.jpg">
+<h3>Gutter Cleaning</h3>
+<p>Blocked gutters can damage your home. We clean and unblock them.</p>
+</div>
+
+<div class="card">
+<img src="con.jpg">
+<h3>Concrete Cleaning</h3>
+<p>Professional deep cleaning for tiles, wood and concrete floors.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="About Us">
+<h2>About Us</h2>
+<p>
+Welcome to CleanPro Cleaning Services. We are a professional cleaning company dedicated to providing high-quality cleaning solutions for homes and businesses. Our goal is to keep your property clean, safe, and well maintained.
+
+We specialise in roof cleaning, gutter cleaning, and floor cleaning. Our experienced team uses safe methods and reliable equipment to remove dirt, moss, dust, and debris. Regular cleaning helps protect your building, improve its appearance, and create a healthier environment.
+
+At CleanPro Cleaning Services, we believe in hard work, honesty, and customer satisfaction. We always aim to deliver reliable services at affordable prices while maintaining a high standard of work.
+
+Whether you need cleaning for your home, office, or commercial property, our team is ready to help. We are committed to making every space clean, fresh, and welcoming.
+</p>
+</section>
+
+<section id="booking">
+
+<h2>Book a Service</h2>
+
+<form action="https://formsubmit.co/Giggzjanny@gmail.com" method="post">
+
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="Phone Number">
+
+<select required>
+<option value="">Select Service</option>
+<option>Roof Cleaning</option>
+<option>Gutter Cleaning</option>
+<option>Concrete Cleaning</option>
+</select>
+
+<textarea rows="4" placeholder="Your Address or Message"></textarea>
+
+<button type="submit">Book Now</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: Giggzjanny@gmail.com</p>
+<p>Phone: +447598164472</p>
+<p>Location: Leicester, UK</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77482.33624641577!2d-1.1311002499999483!3d52.636077100000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487742ab49b76c73%3A0x9a151d2a6fb49cb8!2sLeicester!5e0!3m2!1sen!2suk!4v1773611306201!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<a class="whatsapp-button" href="https://wa.me/447598164472" targrt="blank">💬</a>
+
+<a class="whatsapp" href="https://wa.me/447598164472">💬</a>
+
+<footer>
+
+<p>© 2026 CleanPro Cleaning Services</p>
+
+</footer>
+
+
+
+</body>
+</html>
