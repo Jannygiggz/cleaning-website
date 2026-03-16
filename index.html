@@ -239,9 +239,16 @@ Whether you need cleaning for your home, office, or commercial property, our tea
 
 <form action="https://formspree.io/f/xqeyyzyn" method="post">
 
-<input type="text" placeholder="Full Name" required>
-<input type="email" placeholder="Email Address" required>
-<input type="tel" placeholder="Phone Number">
+<  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
 
 <select required>
 <option value="">Select Service</option>
